@@ -1,0 +1,24 @@
+{
+  "name": "brain-picker",
+  "version": "1.0.0",
+  "description": "An app that allows you to create dynamic quizzes that categorize the users.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagusConjurer/brain-picker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagusConjurer/brain-picker/issues"
+  },
+  "homepage": "https://github.com/MagusConjurer/brain-picker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25"
+  }
+}
