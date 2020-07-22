@@ -1,28 +1,38 @@
 import React from 'react';
 
 class Result extends React.Component {
+  state = {
+    quiz: "Quiz Name",
+    title: "Result Title",
+    image: "https://picsum.photos/200",
+    description: "Result Description"
+  }
+
   render() {
     return (
-      <div className="card">
-        <div className="card-content">
-          <span className="card-title">Quiz Name</span>
-          <h5>Result Title</h5>
-          <div className="row">
-            <div className="card-image">
-              <img className="col s4" src="https://picsum.photos/200" alt="placeholder" />
+      <div className="container">
+        <div className="card">
+          <div className="card-content">
+            <span className="card-title center-align">{this.state.quiz}</span>
+            <h5 className="center-align">{this.state.title}</h5>
+            <div className="row">
+              <div className="card-image">
+                <img className="col s4" src={this.state.image} alt={this.state.title} />
+              </div>
+              <p className="col s8">{this.state.description}</p>
             </div>
-            <p className="col s8">Result description</p>
+            <div className="row">
+              <span className="col s8"></span> 
+              <p className="col s4 right-align">Compare Your Results <i className="activator material-icons right">expand_less</i></p>
+            </div>
           </div>
-          <div className="row">
-            <p className="col s3">Compare Your Results <i className="activator material-icons right">more_vert</i></p>
+          <div className="card-reveal">
+            <span className="card-title center-align">{this.state.quiz}<i className="material-icons right">close</i></span>
+            <p>Include the chart of results to compare</p>
           </div>
-        </div>
-        <div className="card-reveal">
-          <span className="card-title">Quiz Name<i className="material-icons right">close</i></span>
-          <p>Include the chart of results to compare</p>
         </div>
       </div>
-    )
+    );
   }
 }
 
