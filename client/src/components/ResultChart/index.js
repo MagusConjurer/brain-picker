@@ -2,6 +2,10 @@ import React from 'react';
 import Chart from 'chart.js';
 
 class ResultChart extends React.Component {
+  state = {
+    labels: ["One", "Two", "Three", "Four", "Five", "Six"]
+  }
+
   chartRef = React.createRef();
 
   componentDidMount() {
@@ -11,13 +15,21 @@ class ResultChart extends React.Component {
       type: "pie",
       data: {
         datasets: [{
-          data: [5, 10, 15]
+          data: [5, 10, 15],
+          backgroundColor: [
+            "#2B0B3F",
+            "#57167E",
+            "#9B3192",
+            "#EA5F89",
+            "#F7B7A3",
+            "#FFF1C9"
+          ]
         }],
-        labels: [
-          'Result 1',
-          'Result 2',
-          'Result 3'
-        ]
+        labels: this.state.labels
+      },
+      options: {
+        responsive: true,
+        aspectRatio: 2.5
       }
     })
   }
