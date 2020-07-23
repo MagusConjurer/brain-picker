@@ -2,14 +2,15 @@ import React from 'react';
 import Chart from 'chart.js';
 
 class ResultChart extends React.Component {
-  state = {
-    labels: ["One", "Two", "Three", "Four", "Five", "Six"]
+  constructor(props) {
+    super(props);
+    this.state = {
+      chartRef: React.createRef()
+    }
   }
 
-  chartRef = React.createRef();
-
   componentDidMount() {
-    const resultChart = this.chartRef.current.getContext("2d");
+    const resultChart = this.state.chartRef.current.getContext("2d");
 
     new Chart (resultChart, {
       type: "pie",
@@ -25,7 +26,7 @@ class ResultChart extends React.Component {
             "#FFF1C9"
           ]
         }],
-        labels: this.state.labels
+        labels: this.props.labels
       },
       options: {
         responsive: true,
@@ -36,7 +37,10 @@ class ResultChart extends React.Component {
 
   render() {
     return (
-      <canvas id="resultChart" ref={this.chartRef} />
+      <div className="card-reveal">
+        <span className="card-title center-align">{this.props.quiz}<i className="material-icons right">expand_more</i></span>
+        <canvas id="resultChart" ref={this.state.chartRef} />
+      </div>
     );
   }
 }

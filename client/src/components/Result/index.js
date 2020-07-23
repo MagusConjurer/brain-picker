@@ -2,11 +2,15 @@ import React from 'react';
 import ResultChart from '../ResultChart';
 
 class Result extends React.Component {
-  state = {
-    quiz: "Quiz Name",
-    title: "Result Title",
-    image: "https://picsum.photos/200",
-    description: "Result Description"
+  constructor(props) {
+    super(props);
+    this.state = {
+      quiz: "Quiz Name",
+      title: "Result Title",
+      image: "https://picsum.photos/200",
+      description: "Result Description",
+      labels: ["One", "Two", "Three", "Four", "Five", "Six"]
+    }
   }
 
   render() {
@@ -31,10 +35,7 @@ class Result extends React.Component {
             <p className="col s4 right-align">Compare Your Results <i className="activator material-icons right">expand_less</i></p>
           </div>
         </div>
-        <div className="card-reveal">
-          <span className="card-title center-align">{this.state.quiz}<i className="material-icons right">close</i></span>
-          <ResultChart />
-        </div>
+        <ResultChart {...this.state} />
       </div>
     );
   }
