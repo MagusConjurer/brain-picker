@@ -9,7 +9,7 @@ class ResultChart extends React.Component {
     }
   }
 
-  componentDidMount() {
+  createChart = () => {
     const resultChart = this.state.chartRef.current.getContext("2d");
 
     new Chart (resultChart, {
@@ -30,9 +30,16 @@ class ResultChart extends React.Component {
       },
       options: {
         responsive: true,
-        aspectRatio: 2.5
+        aspectRatio: 2.5,
+        legend: {
+          onClick: (e) => e.stopPropagation()
+        }
       }
     })
+  }
+
+  componentDidMount() {
+    this.createChart();
   }
 
   render() {

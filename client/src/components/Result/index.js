@@ -9,7 +9,7 @@ class Result extends React.Component {
       title: "Result Title",
       image: "https://picsum.photos/200",
       description: "Result Description",
-      labels: ["One", "Two", "Three", "Four", "Five", "Six"]
+      labels: ["One", "Two", "Three", "Four"]
     }
   }
 
