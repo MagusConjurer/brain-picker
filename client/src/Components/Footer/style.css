@@ -1,0 +1,17 @@
+.pageFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #663399;
+}
+
+.footerText {
+    text-align: center;
+    color: white;
+    padding: 4px;
+}
+
+.fab {
+    margin-left: 4px;
+}

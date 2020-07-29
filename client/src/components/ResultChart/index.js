@@ -5,10 +5,12 @@ class ResultChart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      chartRef: React.createRef()
+      chartRef: React.createRef(),
+      chartData: [20, 10, 5, 15]
     }
   }
 
+  // Allows for the creating the chart when needed.
   createChart = () => {
     const resultChart = this.state.chartRef.current.getContext("2d");
 
@@ -16,7 +18,7 @@ class ResultChart extends React.Component {
       type: "pie",
       data: {
         datasets: [{
-          data: [5, 10, 15],
+          data: this.state.chartData,
           backgroundColor: [
             "#2B0B3F",
             "#57167E",
