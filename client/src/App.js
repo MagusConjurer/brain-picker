@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Components/Header';
+import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Test from './Components/Test';
 import './App.css';
@@ -8,11 +8,11 @@ import './App.css';
 function App() {
     return (
         <>
-        <Header />
+        <Navbar />
         <Test />
         <Footer />
         </>
-);
+    );
 }
 
 export default App;

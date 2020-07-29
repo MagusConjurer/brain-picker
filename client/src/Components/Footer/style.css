@@ -1,10 +1,15 @@
-.page-footer {
-    position: 'fixed';
+.pageFooter {
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
     background-color: #663399;
+}
+
+.footerText {
+    text-align: center;
+    color: white;
+    padding: 4px;
 }
 
 .fab {
