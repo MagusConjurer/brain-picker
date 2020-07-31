@@ -12,12 +12,8 @@ import Register from "./Components/Auth/Register";
 import Login from "./Components/Auth/Login";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Profile from "./Components/Profile";
-import React from 'react';
-import QuizHeading from './components/quizCentralHeader';
-import QuizCards from './components/quizCards'; 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Test from './components/Test';
+// import QuizHeading from './components/quizCentralHeader';
+// import QuizCards from './components/quizCards'; 
 import './App.css';
 
 // Check for token to keep user logged in

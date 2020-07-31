@@ -18,7 +18,6 @@ app.use(
 );
 app.use(bodyParser.json());
 
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)

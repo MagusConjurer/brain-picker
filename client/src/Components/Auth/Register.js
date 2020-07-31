@@ -29,6 +29,7 @@ class Register extends Component {
             this.setState({
                 errors: nextProps.errors
             });
+            
         }
     }
 
@@ -49,11 +50,12 @@ class Register extends Component {
         this.props.registerUser(newUser, this.props.history);
 
         console.log(newUser);
+       
     };
 
     render() {
         const { errors } = this.state;
-        console.log(errors);
+        
         return (
             <div className="container">
                 <div className="row">
