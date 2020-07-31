@@ -24,7 +24,7 @@ An app that allows you to complete quizzes that categorize the users. Each answe
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [Materialize CSS](https://materializecss.com/)
+- [Materialize](https://materializecss.com/)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Node](https://nodejs.org/en/about/)
 - [NPM](https://docs.npmjs.com/about-npm/)
