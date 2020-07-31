@@ -14,6 +14,7 @@ import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Profile from "./Components/Profile";
 // import QuizHeading from './components/quizCentralHeader';
 // import QuizCards from './components/quizCards'; 
+// import Share from './components/Share';
 import './App.css';
 
 // Check for token to keep user logged in
