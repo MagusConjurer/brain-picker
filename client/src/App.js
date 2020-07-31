@@ -12,6 +12,8 @@ function App() {
         <>
         <Navbar />
         <Test />
+        <QuizHeading />
+        <QuizCards />
         <Footer />
         </>
     );
