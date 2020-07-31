@@ -1,9 +1,10 @@
 import React from 'react';
-import QuizHeading from './components/quizCentralHeader';
-import QuizCards from './components/quizCards'; 
+import QuizHeading from './components/QuizCentralHeader';
+import QuizCards from './components/QuizCards'; 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Test from './components/Test';
+import Share from './components/Share';
 import './App.css';
 
 
@@ -14,6 +15,7 @@ function App() {
         <Test />
         <QuizHeading />
         <QuizCards />
+        <Share />
         <Footer />
         </>
     );
