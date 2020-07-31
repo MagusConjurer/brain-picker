@@ -7,7 +7,7 @@ const heading =
     <h3>Quizzes</h3>
   </div>;
 
-function QuizNav() {
+function QuizHeading() {
   return (
    
     heading
@@ -15,4 +15,5 @@ function QuizNav() {
   );
 }
 
-export default QuizNav;
+export default QuizHeading;
+
