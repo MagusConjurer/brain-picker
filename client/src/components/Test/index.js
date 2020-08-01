@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Test() {
+class Test extends Component {
+    render () {
     return (
         <div className='main'>
         <p>We don’t serve their kind here! What? Your droids. They’ll have to wait outside. We don’t want them here. Listen, why don’t you wait out by the speeder. We don’t want any trouble. I heartily agree with you sir. Negola dewaghi wooldugger?!? He doesn’t like you. I’m sorry. I don’t like you either You just watch yourself. We’re wanted men. I have the death sentence in twelve systems. I’ll be careful than. You’ll be dead. This little one isn’t worth the effort. Come let me buy you something…</p>
@@ -14,6 +15,7 @@ function Test() {
         <p>Threepio! Come in, Threepio! Threepio! Get to the top! I can’t Where could he be? Threepio! Threepio, will you come in? They aren’t here! Something must have happened to them. See if they’ve been captured. Hurry! One thing’s for sure. We’re all going to be a lot thinner! Get on top of it! I’m trying! Thank goodness, they haven’t found them! Where could they be? Use the comlink? Oh, my! I forgot I turned it off! Are you there, sir? Threepio! We’ve had some problems… Will you shut up and listen to me? Shut down all garbage mashers on the detention level, will you? Do you copy? Shut down all the garbage mashers on the detention level. Shut down all the garbage mashers on the detention level. No. Shut them all down! Hurry! Listen to them! They’re dying, Artoo! Curse my metal body! I wasn’t fast enough. It’s all my fault! My poor master! Threepio, we’re all right! We’re all right. You did great.</p>
         </div>
     )
+}
 }
 
 export default Test;
