@@ -24,8 +24,9 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
 // Add routes, both API and view
-// app.use(routes);
+app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
@@ -33,14 +34,14 @@ mongoose.connect(
   { useNewUrlParser: true,
     useUnifiedTopology: true });
 
-  //passport middleware
-  app.use(passport.initialize());
+//passport middleware
+app.use(passport.initialize());
 
-  //passport config
-  require("./config/passport")(passport);
+//passport config
+require("./config/passport")(passport);
 
-  //routes
-  app.use("/api/users", users);
+//routes
+app.use("/api/users", users);
 
 // Start the API server
 app.listen(PORT, function() {
