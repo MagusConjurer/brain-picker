@@ -32,7 +32,7 @@ An app that allows you to complete quizzes that categorize the users. Each answe
 - [Heroku](https://www.heroku.com/)
 
 # Node Packages Used
-
+- [React-Share] (https://www.npmjs.com/package/react-share)
 
 # Versioning
 - [Github](https://github.com/)
