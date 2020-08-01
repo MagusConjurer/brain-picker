@@ -18,7 +18,7 @@ An app that allows you to complete quizzes that categorize the users. Each answe
 [Brain Picker](https://github.com/MagusConjurer/brain-picker)
 
 # Link to Deployed Site (Heroku)
-[Brain Picker](https://.herokuapp.com/)
+[Brain Picker](https://pick-their-brain.herokuapp.com/)
 
 # Built With
 
