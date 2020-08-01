@@ -41,8 +41,8 @@ An app that allows you to complete quizzes that categorize the users. Each answe
 - [MongoDB](https://www.mongodb.com/)
 
 # Authors
-- Cameron Davis
-- Christina Lupanow
-- Miguel Celis
-- Shianne Taylor
-- Brandon Bringhurst
+- [Cameron Davis] (https://github.com/MagusConjurer)
+- [Christina Lupanow] (https://github.com/celupanow)
+- [Miguel Celis] (https://github.com/mcelis025)
+- [Shianne Taylor] (https://github.com/ShianneJT)
+- [Brandon Bringhurst] (https://github.com/lrdkelvin)
