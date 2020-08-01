@@ -12,16 +12,12 @@
     "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-<<<<<<< HEAD
-    "react-scripts": "3.4.1",
-    "react-share": "^4.2.1",
-=======
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-share": "^4.2.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
->>>>>>> fbb1a8a7efe6fee2f4d54ce8979a37cc5fb7a098
   },
   "scripts": {
     "start": "react-scripts start",
