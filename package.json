@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/MagusConjurer/brain-picker/issues"
   },
-  "homepage": "https://github.com/MagusConjurer/brain-picker#readme",
+ 
   "dependencies": {
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
