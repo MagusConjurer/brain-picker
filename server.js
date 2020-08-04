@@ -32,9 +32,10 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("build"));
 
   // Express will serve up the front-end index.html file if it doesn't recognize the route
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve("client/build", "index.html"))
-  );
+  app.get('*', function (req, res) {
+    const index = path.join(__dirname, 'build', 'index.html');
+    res.sendFile(index);
+  });
 }
 // Connect to the Mongo DB
 mongoose.connect(
