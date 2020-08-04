@@ -38,6 +38,21 @@ if (localStorage.jwtToken) {
 
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+  
+    this.state = {
+      counter: 0,
+      questionId: 1,
+      question: '',
+      answerOptions: [],
+      answer: '',
+      answersCount: {},
+      result: ''
+    };
+  }
+  
     render() {
     return (
         <Provider store={store}>
@@ -49,7 +64,7 @@ class App extends Component {
         <Route exact path="/login" component={Login} />
         <Switch>
               <PrivateRoute exact path="/profile" component={Profile} />
-            </Switch>
+         </Switch>
         </div>
         <Footer />
         </Router>
