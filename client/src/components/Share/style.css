@@ -1,0 +1,7 @@
+.share-btn > a {
+    font-family: Verdana, Arial;
+    color: white;
+}
+.share-btn > a:hover {
+    cursor: pointer;
+}
