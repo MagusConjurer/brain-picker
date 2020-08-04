@@ -7,10 +7,10 @@ class Navbar extends Component {
           <nav className='nav-wrapper'>
           <div>
             <a href='/' className='brand-logo'>Pick Their Brain</a>
-            <ul id='nav-mobile' className='right hide-on-med-and-down'> 
+            <ul id='nav-mobile' className='right'>
               <li><a href='/'>Link 1</a></li>
               <li><a href='/'>Link 2</a></li>
-              <li><a href='/' className='waves-effect waves-light btn'>Sign In/Sign Up</a></li>
+              <li><a href='/login' className='waves-effect waves-light btn'>Login</a></li>
             </ul>
           </div>
         </nav>
