@@ -3,7 +3,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
-const users = require("./routes/api/users");
+//const users = require("./routes/api/users");
 // const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -43,13 +43,13 @@ mongoose.connect(
     useUnifiedTopology: true });
 
   //passport middleware
-  app.use(passport.initialize());
+  //app.use(passport.initialize());
 
   //passport config
-  require("./config/passport")(passport);
+  //require("./config/passport")(passport);
 
   //routes
-  app.use("/api/users", users);
+ // app.use("/api/users", users);
 
 // Start the API server
 app.listen(PORT, function() {
