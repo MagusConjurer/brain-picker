@@ -24,15 +24,13 @@ class Register extends Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
+    static getDerivedStateFromProps(nextProps, prevState) {
         if (nextProps.errors) {
-            this.setState({
-                errors: nextProps.errors
-            });
-            
+            return { errors: nextProps.errors };
         }
+        else return null;
     }
-
+ 
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
     };
@@ -50,12 +48,12 @@ class Register extends Component {
         this.props.registerUser(newUser, this.props.history);
 
         console.log(newUser);
-       
+
     };
 
     render() {
         const { errors } = this.state;
-        
+
         return (
             <div className="container">
                 <div className="row">
