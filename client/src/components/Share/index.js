@@ -19,7 +19,7 @@ class Share extends Component {
     const title = "Pick Their Brain";
 
     return (
-      <div>
+      <div className="mt-5">
         <FacebookShareButton url={shareUrl} quote={title}>
           <FacebookIcon size={32} round />
         </FacebookShareButton>

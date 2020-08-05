@@ -8,8 +8,8 @@ class Navbar extends Component {
           <div>
             <img src = "./images/logo.png" alt="logo" className ="brand-logo"></img>
             <ul id='nav-mobile' className='right'>
-              <li><a href='/'>Link 1</a></li>
-              <li><a href='/'>Link 2</a></li>
+              <li><a href='/Quiz'>Quiz</a></li>
+              <li><a href='/Profile'>Profile</a></li>
               <li><a href='/login' className='waves-effect waves-light btn'>Login</a></li>
             </ul>
           </div>
