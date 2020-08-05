@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "quizName": "sample quiz",
+        "description": "hopefully this works (test)",
+        "image": "https://cloud.mysteryscience.com/image/fetch/c_fill,f_auto,q_auto/https://www.dropbox.com/s/hnsgawcap2ket3f/InvisibleForcesM2-Thumbnail-1920x1080.png%3Fdl%3D1",
+        "q1": "test",
+        "q2": "test",
+        "q3": "test",
+        "q4": "test",
+        "q5": "test"
+    }
+]
