@@ -6,7 +6,7 @@ class Navbar extends Component {
         return(
           <nav className='nav-wrapper'>
           <div>
-            <a href='/' className='brand-logo'>Pick Their Brain</a>
+            <img src = "./images/logo.png" alt="logo" className ="brand-logo"></img>
             <ul id='nav-mobile' className='right'>
               <li><a href='/'>Link 1</a></li>
               <li><a href='/'>Link 2</a></li>
