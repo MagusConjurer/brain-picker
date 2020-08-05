@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
-import QuizCentralHeader from '../components/QuizCentralHeader';
-import QuizCards from '../components/QuizCards';
+import QuizCentralHeader from '../components/quizCentralHeader';
+import QuizCards from '../components/quizCards';
 import Share from '../components/Share';
 import Footer from '../components/Footer';
 
