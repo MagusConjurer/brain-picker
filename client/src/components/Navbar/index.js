@@ -8,7 +8,7 @@ class Navbar extends Component {
           <div>
             <a href='/' className='brand-logo'>Pick Their Brain</a>
             <ul id='nav-mobile' className='right'>
-              <li><a href='/Quiz'>Quiz</a></li>
+              <li><a href='/QuizCentral'>Quiz Central</a></li>
               <li><a href='/Profile'>Profile</a></li>
               <li><a href='/login' className='waves-effect waves-light btn'>Login</a></li>
             </ul>
