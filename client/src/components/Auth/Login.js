@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
@@ -22,17 +22,12 @@ class Login extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/profile"); // push user to dashboard when they login
-    }
-
-if (nextProps.errors) {
-      this.setState({
-        errors: nextProps.errors
-      });
-    }
-  }
+  static getDerivedStateFromProps(nextProps, prevState){
+    if (nextProps.errors) {
+        return { errors: nextProps.errors };
+    } 
+    else return null;
+}
 
 onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
@@ -46,9 +41,10 @@ const userData = {
       password: this.state.password
     };
     
-    this.props.loginUser(userData); // since we handle the redirect within our component, we don't need to pass in this.props.history as a parameter
+    this.props.loginUser(userData, this.props.history);
 console.log(userData);
   };
+
 render() {
     const { errors } = this.state;
 return (
@@ -135,4 +131,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { loginUser }
-)(Login);
+)(withRouter(Login));
