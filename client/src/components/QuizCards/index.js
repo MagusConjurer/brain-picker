@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
+// import { checkPropTypes } from "prop-types";
 
-function QuizCards() {
+function QuizCards(props) {
   return (
     <div class="card cardWidth sticky-action">
       <div class="card-image waves-effect waves-block waves-light">
@@ -9,7 +10,7 @@ function QuizCards() {
       </div>
       <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">
-          Card Title<i class="material-icons right">more_vert</i>
+          {props.title}<i class="material-icons right">more_vert</i>
         </span>
         <p>
           <a href="https://github.com/MagusConjurer/brain-picker">This is a link</a>
@@ -17,11 +18,10 @@ function QuizCards() {
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">
-          Card Title<i class="material-icons right">close</i>
+          {props.title}<i class="material-icons right">close</i>
         </span>
         <p>
-          Here is some more information about this product that is only revealed
-          once clicked on.
+          {props.category}
         </p>
       </div>
     </div>
