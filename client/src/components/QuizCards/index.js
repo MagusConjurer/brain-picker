@@ -12,7 +12,7 @@ class QuizCards extends Component {
           <span class="card-title activator grey-text text-darken-4">
             {QuizSample.quizName}<i class="material-icons right">more_vert</i>
           </span>
-          <p><a href="/">Take Quiz</a></p>
+          <p><a href="/Quiz">Take Quiz</a></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">
