@@ -1,4 +1,25 @@
 import React, { Component } from "react";
+import QuizSamples from "../../QuizSamples.json";
+
+class InputInfo extends Component {
+  state = {
+    QuizSamples
+  }
+
+  render(){
+    return(
+      <InputInfo>
+          {this.state.QuizSamples.map(QuizSamples => <QuizForm
+          id={QuizSamples.id}
+          onClick={this.handleSubmit}
+          quizName={QuizSamples.quizName}
+          answers={QuizSamples.answers}
+          />)}
+      </InputInfo>
+    )
+  }
+}
+
 
 class QuizForm extends Component {
   render() {
@@ -31,6 +52,14 @@ class QuizForm extends Component {
             </label>
           </p>
         </form>
+        <button
+          class="btn waves-effect waves-light red"
+          type="submit"
+          name="action"
+        >
+          Submit
+          <i class="material-icons right">send</i>
+        </button>{" "}
       </>
     );
   }
