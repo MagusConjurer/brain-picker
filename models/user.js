@@ -6,10 +6,7 @@ const UserSchema = new Schema({
   email: { type: String, required: true },
   password: { type: String, required: true },
   date: { type: Date, default: Date.now },
-  results: [{
-    type: Schema.Types.ObjectId,
-    ref: "Result"
-  }],
+  results: { type: Number, default: null },
   quizzes: [{
     type: Schema.Types.ObjectId,
     ref: "Quiz"
