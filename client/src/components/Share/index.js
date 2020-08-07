@@ -16,7 +16,7 @@ import "./style.css";
 class Share extends Component {
   render() {
     const shareUrl = "https://github.com/MagusConjurer/brain-picker";
-    const title = "Pick Their Brain";
+    const title = "Pick Their Brain"; 
 
     return (
       <div className="margin">
