@@ -5,10 +5,6 @@ class QuizForm extends Component {
     super(props);
   }
 
-  componentDidMount() {
-    console.log(this.props.quizQuestion.answers)
-  }
-
   render() {
     return (
       <>
