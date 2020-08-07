@@ -1,5 +1,5 @@
 .brand-logo {
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
     margin-left: 10px;
     float: right;
     position: relative;
@@ -12,4 +12,5 @@
     margin-bottom: 40px;
     border-bottom: solid;
     border-color: tomato;
+    font-family: 'Roboto', sans-serif;
 }
