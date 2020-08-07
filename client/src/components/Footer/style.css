@@ -24,6 +24,6 @@ a {
     color: tomato;
 }
 
-a:hover {
+footer > a:hover {
     color: white;
 }

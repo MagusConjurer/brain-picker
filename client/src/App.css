@@ -1,7 +1,15 @@
 body {
   font-family: 'Roboto', sans-serif;
+  color: #444444
 }
 
+.btn {
+  background-color: #12ccbd;
+}
+
+a:hover {
+  color: #005165;
+}
 
 /* .App {
   text-align: center;
