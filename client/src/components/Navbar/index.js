@@ -14,7 +14,7 @@ class Navbar extends Component {
 
           <ul id="nav-mobile" className="right">
             <li>
-              <a href="/QuizCentral">Quiz</a>
+              <a href="/QuizCentral">Quiz Central</a>
             </li>
             <li>
               <a href="/Profile">Profile</a>
