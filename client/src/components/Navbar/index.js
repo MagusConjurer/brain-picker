@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import "./style.css";
 
+
 class Navbar extends Component {
+
+
+
   render() {
     return (
       <nav className="nav-wrapper">
@@ -18,12 +22,12 @@ class Navbar extends Component {
             <li>
               <a href="/QuizCentral">Quiz Central</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/Profile">Profile</a>
-            </li>
+            </li> */}
             <li>
-              <a href="/login" className="waves-effect waves-light btn">
-                Login
+            <a href="/profile" className="waves-effect waves-light btn">
+                Profile
               </a>
             </li>
           </ul>
