@@ -1,40 +1,23 @@
 import React, { Component } from "react";
-import QuizSamples from "../../QuizSamples.json";
 
 class QuizForm extends Component {
-  state = {
-    QuizSamples
-  };
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     return (
       <>
-        <h4>{QuizSamples.question}</h4>
+        <h4>{this.props.quizQuestion.question}</h4>
         <form action="#">
-          <p>
+          {this.props.quizQuestion.answers.map(data => 
+            <p>
             <label>
               <input className="with-gap" name="group1" type="radio"></input>
-              <span>{QuizSamples.answers}</span>
+              <span>{data.answer}</span>
             </label>
           </p>
-          <p>
-            <label>
-              <input className="with-gap" name="group1" type="radio"></input>
-              <span>{QuizSamples.answers}</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input className="with-gap" name="group1" type="radio"></input>
-              <span>{QuizSamples.answers}</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input className="with-gap" name="group1" type="radio"></input>
-              <span>{QuizSamples.answers}</span>
-            </label>
-          </p>
+          )}
         </form>
         <button
           className="btn waves-effect waves-light red"

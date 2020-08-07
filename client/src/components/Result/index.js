@@ -5,11 +5,11 @@ class Result extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      quiz: "Quiz Name",
-      title: "Result Title",
-      image: "https://picsum.photos/200",
-      description: "Result Description",
-      labels: ["One", "Two", "Three", "Four"]
+      quiz: this.props.quiz,
+      title: this.props.result.title,
+      description:  this.props.result.description,
+      image: this.props.result.image,
+      labels: this.props.labels
     }
   }
 

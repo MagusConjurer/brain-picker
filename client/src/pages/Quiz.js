@@ -4,19 +4,46 @@ import Share from '../components/Share';
 import Footer from '../components/Footer';
 import QuizSample from '../QuizSamples.json';
 import QuizForm from '../components/QuizForm';
+import Result from '../components/Result';
 
 class QuizTest extends Component {
-
-    state = {
-        QuizSample
+  constructor(props) {
+    super(props);
+    this.state = {
+        quiz: QuizSample[0],
+        submitted: false,
+        result: {},
+        labels: []
     };
+  }
 
-    render() {
-        return(
+  getResult(resultIndex) {
+    this.setState(state => ({
+      result: state.quiz.results[resultIndex]
+    }), () => this.setLabels());
+  };
 
+  setLabels() {
+    let quizLabels = [];
+    this.state.quiz.results.forEach(result => quizLabels.push(result.title));
+    this.setState({
+      labels: quizLabels
+    });
+  };
+
+  componentDidMount() {
+    this.getResult(1);
+    //this.setState({submitted: true});
+  }
+
+  render() {
+      return(
             <div>
-                <QuizPageHeader QuizSample={this.state.QuizSample} />
-                <QuizForm QuizSample={this.state.QuizSample} />
+                <QuizPageHeader quiz={this.state.quiz} />
+                {this.state.submitted 
+                  ? <Result quiz={this.state.quiz.quizName} result={this.state.result} labels={this.state.labels} />
+                  : this.state.quiz.questions.map(question => <QuizForm quizQuestion={question} />)
+                }
                 <Share className="mt-5" />
                 <Footer />
             </div>
