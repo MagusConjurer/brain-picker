@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import QuizCentralHeader from '../components/quizCentralHeader';
-import QuizCards from '../components/quizCards';
+import QuizCentralHeader from '../components/QuizCentralHeader';
+import QuizCards from '../components/QuizCards';
 import Share from '../components/Share';
 import Footer from '../components/Footer';
 import QuizSample from '../QuizSamples.json';
