@@ -38,17 +38,17 @@ class QuizTest extends Component {
 
   render() {
       return(
-          <div>
-              <QuizPageHeader />
-              {this.state.submitted 
-                ? <Result quiz={this.state.quiz.quizName} result={this.state.result} labels={this.state.labels} />
-                : <QuizForm />
-              }
-              <Share className="mt-5" />
-              <Footer />
-          </div>
-      )
-  }
+            <div>
+                <QuizPageHeader quiz={this.state.quiz} />
+                {this.state.submitted 
+                  ? <Result quiz={this.state.quiz.quizName} result={this.state.result} labels={this.state.labels} />
+                  : this.state.quiz.questions.map(question => <QuizForm quizQuestion={question} />)
+                }
+                <Share className="mt-5" />
+                <Footer />
+            </div>
+        )
+    }
 }
 
 export default QuizTest;

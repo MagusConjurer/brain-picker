@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { Component } from "react";
 
-function QuizHeading() {
-  return (
-   
-    <div>
-      <h1>Quiz Name</h1>
-      <h4>Let us pick your brain.</h4>
-      <br />
-    </div>
-
-  );
+class QuizHeading extends Component {
+  render() {
+    return (
+      <div>
+        <h1>{this.props.quiz.quizName}</h1>
+        <h4>Let us pick your brain.</h4>
+        <br />
+      </div>
+    );
+  }
 }
 
 export default QuizHeading;
-

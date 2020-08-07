@@ -1,36 +1,36 @@
 import React, { Component } from "react";
 
 class QuizForm extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    console.log(this.props.quizQuestion.answers)
+  }
+
   render() {
     return (
       <>
-        <h4>Question blah blah blah</h4>
+        <h4>{this.props.quizQuestion.question}</h4>
         <form action="#">
-          <p>
+          {this.props.quizQuestion.answers.map(data => 
+            <p>
             <label>
               <input className="with-gap" name="group1" type="radio"></input>
-              <span>Red</span>
+              <span>{data.answer}</span>
             </label>
           </p>
-          <p>
-            <label>
-              <input className="with-gap" name="group1" type="radio"></input>
-              <span>Yellow</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input className="with-gap" name="group1" type="radio"></input>
-              <span>Green</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input className="with-gap" name="group1" type="radio"></input>
-              <span>Brown</span>
-            </label>
-          </p>
+          )}
         </form>
+        <button
+          className="btn waves-effect waves-light red"
+          type="submit"
+          name="action"
+        >
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
       </>
     );
   }
