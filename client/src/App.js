@@ -13,6 +13,7 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Profile from "./components/Profile";
 import Test from './pages/Test';
 import QuizCentral from './pages/QuizCentral';
+import Quiz from './pages/Quiz';
 import './App.css';
 
 // Check for token to keep user logged in
@@ -59,6 +60,7 @@ class App extends Component {
         <div className='container'>
         <Route exact path="/" component={Test} />
         <Route exact path="/QuizCentral" component={QuizCentral} />
+        <Route exact path="/Quiz" component={Quiz} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <Switch>

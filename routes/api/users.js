@@ -98,4 +98,16 @@ router.post("/login", (req, res) => {
     });
 });
 
+router.post("/result/:id/:value", (req, res) => {
+  User.findByIdAndUpdate(req.params.id, { results: req.params.value })
+    .then(dbUser => res.json(dbUser))
+    .catch(err => res.status(422).json(err));
+});
+
+router.get("/result/:id", (req, res) => {
+  User.findById(req.params.id)
+    .then(dbUser => res.json(dbUser.results))
+    .catch(err => res.status(422).json(err));
+});
+
 module.exports = router;
