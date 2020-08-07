@@ -8,7 +8,9 @@ class Navbar extends Component {
         <div>
           <a href="/">
             <img
-              src="./images/logo.png" alt="logo"className="brand-logo"
+              src="./images/logo.png"
+              alt="logo"
+              className="brand-logo"
             ></img>
           </a>
 
