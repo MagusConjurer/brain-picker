@@ -1,15 +1,16 @@
 .brand-logo {
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
     margin-left: 10px;
     float: right;
     position: relative;
-  
     margin-top: -80px;
 }
 
 .nav-wrapper {
-    background-color: #663399;
+    /* background-color: #663399; */
+    background-color: #005165;
     margin-bottom: 40px;
     border-bottom: solid;
     border-color: tomato;
+    font-family: 'Roboto', sans-serif;
 }
