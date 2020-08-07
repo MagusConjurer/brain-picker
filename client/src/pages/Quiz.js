@@ -4,48 +4,51 @@ import Share from '../components/Share';
 import Footer from '../components/Footer';
 import QuizSample from '../QuizSamples.json';
 import QuizForm from '../components/QuizForm';
+import Result from '../components/Result';
 
 class QuizTest extends Component {
-
-    state = {
-        QuizSample,
+  constructor(props) {
+    super(props);
+    this.state = {
+        quiz: QuizSample[0],
         submitted: false,
         result: {},
         labels: []
     };
+  }
 
-    getResult(resultIndex) {
-      this.setState({
-        result: QuizSample.results[resultIndex]
-      });
-    };
+  getResult(resultIndex) {
+    this.setState(state => ({
+      result: state.quiz.results[resultIndex]
+    }), () => this.setLabels());
+  };
 
-    setLabels() {
-      quizLabels = [];
-      QuizSample.results.forEach(result => quizLabels.push(result.title));
-      this.setState({
-        labels: quizLabels
-      });
-    };
+  setLabels() {
+    let quizLabels = [];
+    this.state.quiz.results.forEach(result => quizLabels.push(result.title));
+    this.setState({
+      labels: quizLabels
+    });
+  };
 
-    componentDidMount() {
-      this.setLabels();
-    }
+  componentDidMount() {
+    this.getResult(1);
+    //this.setState({submitted: true});
+  }
 
-    render() {
-        return(
-
-            <div>
-                <QuizPageHeader />
-                {submitted 
-                  ? <QuizForm />
-                  : <Result quiz={QuizSample.quizName} result={this.state.result} labels={this.state.labels} />
-                }
-                <Share className="mt-5" />
-                <Footer />
-            </div>
-        )
-    }
+  render() {
+      return(
+          <div>
+              <QuizPageHeader />
+              {this.state.submitted 
+                ? <Result quiz={this.state.quiz.quizName} result={this.state.result} labels={this.state.labels} />
+                : <QuizForm />
+              }
+              <Share className="mt-5" />
+              <Footer />
+          </div>
+      )
+  }
 }
 
 export default QuizTest;
