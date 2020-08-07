@@ -1,13 +1,84 @@
 [
     {
         "id": 1,
-        "quizName": "sample quiz",
-        "description": "hopefully this works (test)",
+        "quizName": "What Color Are You?",
+        "description": "Find out which color best represents who you are.",
         "image": "https://cloud.mysteryscience.com/image/fetch/c_fill,f_auto,q_auto/https://www.dropbox.com/s/hnsgawcap2ket3f/InvisibleForcesM2-Thumbnail-1920x1080.png%3Fdl%3D1",
-        "q1": "test",
-        "q2": "test",
-        "q3": "test",
-        "q4": "test",
-        "q5": "test"
+        "q1": {
+            "question": "Do you prefer day or night?",
+            "answers": {
+                "a1": {
+                    "answer": "night",
+                    "weights": [0, 5, 3, 1]
+                },
+                "a2": {
+                    "answer": "day",
+                    "weights": [5, 0, 2, 4]
+                }
+
+            }
+        },
+        "q2": {
+            "question": "What is your favorite season?",
+            "answers": {
+                "a1": {
+                    "answer": "Spring",
+                    "weights": [5, 3, 0, 2]
+                },
+                "a2": {
+                    "answer": "Summer",
+                    "weights": [3, 0, 3, 5]
+                },
+                "a3": {
+                    "answer": "Fall",
+                    "weights": [3, 5, 0, 3]
+                },
+                "a4": {
+                    "answer": "Winter",
+                    "weights": [0, 3, 5, 2]
+                }
+            }
+        },
+        "q3": {
+            "question": "Do you prefer chocolate or vanilla?",
+            "answers": {
+                "a1": {
+                    "answer": "Chocolate",
+                    "weights": [0, 5, 2, 4]
+                },
+                "a2": {
+                    "answer": "Vanilla",
+                    "weights": [5, 0, 4, 2]
+                }
+            }
+        },
+        "q4": {
+            "question": "Do you believe in astrology?",
+            "answers": {
+                "a1": {
+                    "answer": "Yes",
+                    "weights": [4, 5, 3, 0]
+                },
+                "a2": {
+                    "answer": "No",
+                    "weights": [1, 0, 4, 5]
+                }
+            }
+        },
+        "q5": {
+            "question": "Do you prefer cats or dogs?",
+            "answers": {
+                "a1": {
+                    "answer": "Cats",
+                    "weights": [4, 5, 2, 0]
+                },
+                "a2": {
+                    "answer": "Dogs",
+                    "weights": [3, 0, 4, 5]
+                }
+            }
+        },
+
+        "results": ["yellow", "purple", "blue", "red"]
     }
 ]
