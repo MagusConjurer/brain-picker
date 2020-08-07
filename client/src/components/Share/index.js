@@ -16,10 +16,10 @@ import "./style.css";
 class Share extends Component {
   render() {
     const shareUrl = "https://github.com/MagusConjurer/brain-picker";
-    const title = "Pick Their Brain";
+    const title = "Pick Their Brain"; 
 
     return (
-      <div className="mt-5">
+      <div className="margin">
         <FacebookShareButton url={shareUrl} quote={title}>
           <FacebookIcon size={32} round />
         </FacebookShareButton>

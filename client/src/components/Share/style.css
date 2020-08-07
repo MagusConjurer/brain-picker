@@ -5,3 +5,7 @@
 .share-btn > a:hover {
     cursor: pointer;
 }
+
+.margin {
+    margin-top: 100px;
+  }

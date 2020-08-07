@@ -15,8 +15,8 @@ class QuizTest extends Component {
         return(
 
             <div>
-                <QuizPageHeader />
-                <QuizForm />
+                <QuizPageHeader QuizSample={this.state.QuizSample} />
+                <QuizForm QuizSample={this.state.QuizSample} />
                 <Share className="mt-5" />
                 <Footer />
             </div>
