@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import Register from "./components/Auth/Register";
 import Login from "./components/Auth/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-import Profile from "./components/Profile";
+import Profile from "./pages/Profile";
 import Test from './pages/Test';
 import QuizCentral from './pages/QuizCentral';
 import Quiz from './pages/Quiz';
@@ -58,7 +58,7 @@ class App extends Component {
         <Router>
         <Navbar />
         <div className='container'>
-        <Route exact path="/" component={Test} />
+        <Route exact path="/" component={QuizCentral} />
         <Route exact path="/QuizCentral" component={QuizCentral} />
         <Route exact path="/Quiz" component={Quiz} />
         <Route exact path="/register" component={Register} />
