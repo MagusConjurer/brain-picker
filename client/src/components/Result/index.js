@@ -13,10 +13,6 @@ class Result extends React.Component {
     }
   }
 
-  // componentDidMount() {
-
-  // }
-
   render() {
     return (
       <div className="card">
