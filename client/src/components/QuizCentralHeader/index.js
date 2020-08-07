@@ -1,6 +1,6 @@
 import React from 'react';
 
-function QuizHeading() {
+function QuizCentralHeader() {
   return (
    
     <div>
@@ -12,5 +12,5 @@ function QuizHeading() {
   );
 }
 
-export default QuizHeading;
+export default QuizCentralHeader;
 
