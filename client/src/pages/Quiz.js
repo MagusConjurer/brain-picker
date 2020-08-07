@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import QuizCentralHeader from '../components/QuizCentralHeader';
-import QuizCards from '../components/QuizCards';
+import QuizPageHeader from '../components/QuizPageHeader';
 import Share from '../components/Share';
 import Footer from '../components/Footer';
 import QuizSample from '../QuizSamples.json';
+import QuizForm from '../components/QuizForm';
 
-class QuizCentral extends Component {
+class QuizTest extends Component {
 
     state = {
         QuizSample
@@ -15,8 +15,8 @@ class QuizCentral extends Component {
         return(
 
             <div>
-                <QuizCentralHeader />
-                <QuizCards QuizSample={this.state.QuizSample} />
+                <QuizPageHeader />
+                <QuizForm />
                 <Share className="mt-5" />
                 <Footer />
             </div>
@@ -24,4 +24,4 @@ class QuizCentral extends Component {
     }
 }
 
-export default QuizCentral;
+export default QuizTest;

@@ -8,13 +8,15 @@ class Navbar extends Component {
         <div>
           <a href="/">
             <img
-              src="./images/logo.png" alt="logo"className="brand-logo"
+              src="./images/logo.png"
+              alt="logo"
+              className="brand-logo"
             ></img>
           </a>
 
           <ul id="nav-mobile" className="right">
             <li>
-              <a href="/QuizCentral">Quiz</a>
+              <a href="/QuizCentral">Quiz Central</a>
             </li>
             <li>
               <a href="/Profile">Profile</a>
