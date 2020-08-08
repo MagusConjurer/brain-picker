@@ -63,7 +63,7 @@ class QuizTest extends Component {
                 <QuizPageHeader quiz={this.state.quiz} />
                 {this.state.submitted 
                   ? <Result {...this.state} />
-                  : this.state.quiz.questions.map(question => <QuizForm quizQuestion={question} />)
+                  : this.state.quiz.questions.map(question => <QuizForm quizQuestion={question} /> )
                 }
                 <SubmitBtn />
                 <Share className="mt-5" />
