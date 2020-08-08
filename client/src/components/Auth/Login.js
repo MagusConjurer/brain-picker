@@ -42,7 +42,6 @@ const userData = {
     };
     
     this.props.loginUser(userData, this.props.history);
-console.log(userData);
   };
 
 render() {

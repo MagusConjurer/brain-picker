@@ -11,7 +11,6 @@ import Register from "./components/Auth/Register";
 import Login from "./components/Auth/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Profile from "./pages/Profile";
-import Test from './pages/Test';
 import QuizCentral from './pages/QuizCentral';
 import Quiz from './pages/Quiz';
 import './App.css';

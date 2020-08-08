@@ -6,7 +6,11 @@ export function UserImage() {
     return(
         <div className=''>
             <h6>Profile test</h6>
-            <img src='./images/default-person.png'/>
+<<<<<<< HEAD
+            <img alt="." src='./images/default-person.png'/>
+=======
+            <img src='./images/default-person.png' alt="default-person" />
+>>>>>>> 77ac9b99ae2bb10086e151282057f5e905a655f2
         </div>
     );
 }
