@@ -1,14 +1,13 @@
 import React from 'react';
 import './style.css';
-import Collapsible from 'react-collapsible';
+// import Collapsible from 'react-collapsible';
 
 export function UserImage() {
-    return(
-        <div className=''>
-            <h6>Profile test</h6>
-            <img src='./images/default-person.png' alt="default-person" />
-        </div>
-    );
+  return(
+    <div className="">
+      <img alt="." src='./images/default-person.png'/>
+    </div>
+  )
 }
 
 export function UserBio() {
@@ -20,37 +19,21 @@ export function UserBio() {
     )
 }
 
-export function UserQuizResults() {
-    return(
-        <div className='quizResults'>
-            <Collapsible trigger="Quiz Name" className='.Collapsible__trigger Collapsible__contentOuter'>
-                <p>Quiz results!!!</p>
-            </Collapsible>
-        </div>
-    )
-}
+export function Row({ children }) {
+  return <div className={'row'}>{children}</div>
+};
+
+export function Col({ children }) {
+  return (
+    <div className={'col'}>{children}</div>
+  );
+};
 
 
-// class Test extends Component {
-//     render() {
-//         return (
-// <>
-
-//             <div className='userInfo'>
-//                 <img src='./images/default-person.png'/>
-//             </div>
-
-
-
-
-//             <div className='main'>
-//                 <Collapsible trigger="Quiz Name" className='.Collapsible__trigger Collapsible__contentOuter'>
-//                     <p>Quiz results!!!</p>
-//                 </Collapsible>
-//             </div>
-// </>
-//         )
-//     }
+//         // <div className='quizResults'>
+//         //     <Collapsible trigger="Quiz Name" className='.Collapsible__trigger Collapsible__contentOuter'>
+//         //         <p>Quiz results!!!</p>
+//         //     </Collapsible>
+//         // </div>
+//     )
 // }
-
-

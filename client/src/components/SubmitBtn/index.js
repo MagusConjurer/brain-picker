@@ -1,6 +1,6 @@
 import React from "react";
 
-function SubmitBtn() {
+function SubmitBtn(props) {
   const style = {
       marginTop: "50px"
   }
@@ -10,6 +10,7 @@ function SubmitBtn() {
       type="submit"
       name="action"
       style={style}
+      onClick={props.clickHandler}
     >
       Submit Quiz
       <i className="material-icons right">send</i>
