@@ -27,10 +27,7 @@ class QuizTest extends Component {
   getResult(resultIndex) {
     this.setState(state => ({
       result: state.quiz.results[resultIndex]
-    }), () => {
-      console.log("After getResult", this.state)
-      this.setChartValues()
-    });
+    }));
   };
 
   setChartValues() {
@@ -40,9 +37,7 @@ class QuizTest extends Component {
       this.setState((state, props) => ({
         chartLabels: labels,
         chartValues: res.data
-      }), () => {
-        console.log("After setChartValues", this.state)
-      });
+      }));
     })
   };
 
