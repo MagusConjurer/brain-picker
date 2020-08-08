@@ -5,8 +5,7 @@ class ResultChart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      chartRef: React.createRef(),
-      chartData: [20, 10, 5, 15]
+      chartRef: React.createRef()
     }
   }
 
@@ -18,7 +17,7 @@ class ResultChart extends React.Component {
       type: "pie",
       data: {
         datasets: [{
-          data: this.state.chartData,
+          data: this.props.values,
           backgroundColor: [
             "#2B0B3F",
             "#57167E",
