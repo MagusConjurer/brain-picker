@@ -51,7 +51,7 @@ class QuizTest extends Component {
   handleSubmitClick(e) {
     e.preventDefault();
     this.getResult(3);
-    setTimeout(() => {this.setSubmitted();}, 2000);
+    setTimeout(() => {this.setSubmitted();}, 5000);
   }
 
   render() {
