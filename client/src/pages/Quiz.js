@@ -13,7 +13,8 @@ class QuizTest extends Component {
         quiz: QuizSample[0],
         submitted: false,
         result: {},
-        labels: []
+        labels: [],
+        chartValues: []
     };
   }
 
