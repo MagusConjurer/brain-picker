@@ -3,8 +3,6 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    /* background-color: #663399; */
-    /* background-color: #009aff; */
     background-color: #005165;
     border-top: solid;
     border-color: tomato;
@@ -14,6 +12,7 @@
     text-align: center;
     color: white;
     padding: 4px;
+    font-size: 14px;
 }
 
 .fab {
