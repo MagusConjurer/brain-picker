@@ -8,6 +8,9 @@ import SubmitBtn from '../components/SubmitBtn';
 import Result from '../components/Result';
 import API from '../utils/API';
 
+
+let buttonClicked = false;
+
 class QuizTest extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +19,8 @@ class QuizTest extends Component {
         submitted: false,
         result: {},
         chartLabels: [],
-        chartValues: []
+        chartValues: [],
+        buttonClicked: false
     };
 
     this.getResult = this.getResult.bind(this);
@@ -41,18 +45,35 @@ class QuizTest extends Component {
     })
   };
 
+  handleClick(e) {
+    e.preventDefault();
+    console.log('The button was clicked.');
+    this.setState(state => ({
+      buttonClicked: true
+    }));
+  };
+  
+  
+
   setSubmitted() {
     this.setState(state => ({
       submitted: true
     }));
   }
 
-  componentDidMount() {
-    this.getResult(1)
-    setTimeout(() => {this.setSubmitted();}, 2000);
+  somethingHappened() {
+    console.log("it happened");
+    this.getResult(2)
+    setTimeout(() => {
+      this.setSubmitted()
+    }, 2000);
+    
   }
 
+  
+
   render() {
+    if (buttonClicked === false) {
       return(
             <div>
                 <QuizPageHeader quiz={this.state.quiz} />
@@ -60,12 +81,28 @@ class QuizTest extends Component {
                   ? <Result {...this.state} />
                   : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
                 }
-                <SubmitBtn />
+                <SubmitBtn onClick = {this.somethingHappened}/>
                 <Share />
                 <Footer />
             </div>
         )
+              }
+              else if (buttonClicked === true) {
+                return(
+                  <div>
+                      <QuizPageHeader quiz={this.state.quiz} />
+                      {this.state.submitted 
+                        ? <Result {...this.state} />
+                        : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
+                      }
+                      <Share />
+                      <Footer />
+                  </div>
+              )
+
+              }
     }
 }
+
 
 export default QuizTest;
