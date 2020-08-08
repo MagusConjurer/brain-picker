@@ -22,6 +22,7 @@ class QuizTest extends Component {
     this.getResult = this.getResult.bind(this);
     this.setChartValues = this.setChartValues.bind(this);
     this.setSubmitted = this.setSubmitted.bind(this);
+    this.handleSubmitClick = this.handleSubmitClick.bind(this);
   }
 
   getResult(resultIndex) {
@@ -47,8 +48,9 @@ class QuizTest extends Component {
     }));
   }
 
-  componentDidMount() {
-    this.getResult(1)
+  handleSubmitClick(e) {
+    e.preventDefault();
+    this.getResult(3);
     setTimeout(() => {this.setSubmitted();}, 2000);
   }
 
@@ -60,7 +62,7 @@ class QuizTest extends Component {
                   ? <Result {...this.state} />
                   : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
                 }
-                <SubmitBtn />
+                <SubmitBtn clickHandler={this.handleSubmitClick} />
                 <Share />
                 <Footer />
             </div>
