@@ -1,11 +1,9 @@
-.share-btn > a {
-    font-family: Verdana, Arial;
-    color: white;
-}
-.share-btn > a:hover {
-    cursor: pointer;
-}
-
 .margin {
     margin-top: 100px;
   }
+
+.shareIcon {
+    margin-right: 6px;
+    align-content: space-around;
+    cursor: pointer;
+}

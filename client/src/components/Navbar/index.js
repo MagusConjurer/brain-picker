@@ -13,7 +13,7 @@ class Navbar extends Component {
               src="./images/logo.png"
               alt="logo"
               className="brand-logo"
-            ></img>
+            />
           </a>
 
           <ul id="nav-mobile" className="right">
