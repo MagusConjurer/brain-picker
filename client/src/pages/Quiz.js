@@ -26,12 +26,13 @@ class QuizTest extends Component {
     this.getResult = this.getResult.bind(this);
     this.setChartValues = this.setChartValues.bind(this);
     this.setSubmitted = this.setSubmitted.bind(this);
+    this.handleSubmitClick = this.handleSubmitClick.bind(this);
   }
 
   getResult(resultIndex) {
     this.setState(state => ({
       result: state.quiz.results[resultIndex]
-    }));
+    }), ()  => {this.setChartValues()});
   };
 
   setChartValues() {
@@ -61,6 +62,7 @@ class QuizTest extends Component {
     }));
   }
 
+<<<<<<< HEAD
   somethingHappened() {
     console.log("it happened");
     this.getResult(2)
@@ -68,6 +70,12 @@ class QuizTest extends Component {
       this.setSubmitted()
     }, 2000);
     
+=======
+  handleSubmitClick(e) {
+    e.preventDefault();
+    this.getResult(3);
+    setTimeout(() => {this.setSubmitted();}, 2000);
+>>>>>>> d40a289bc9db9e9f74e6f13d9efaee6c7f6d0aac
   }
 
   
@@ -80,7 +88,7 @@ class QuizTest extends Component {
                   ? <Result {...this.state} />
                   : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
                 }
-                <SubmitBtn />
+                <SubmitBtn clickHandler={this.handleSubmitClick} />
                 <Share />
                 <Footer />
             </div>

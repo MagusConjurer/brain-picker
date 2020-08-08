@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "quizName": "Color Guesser?",
-        "description": "Can we guess your favorite color?!",
+        "quizName": "What Color Is Your Personality",
+        "description": "Find out what color your personality is!",
         "image": "https://cdn.hytto.com/UploadFiles/file/20191227/color_marketing_psychology.jpg",
         "questions": [{
             "question": "Do you prefer day or night?",
@@ -80,22 +80,22 @@
           }],
         "results": [
             {
-                "title": "yellow",
+                "title": "Yellow",
                 "description": "You are yellow! You are sunny and bright. You love to have fun and make friends easily.",
                 "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0JZYh0VZBaeVnXWcKI3BMhw3bbHHxkeVF5A&usqp=CAU"
             },
             {
-                "title": "purple",
+                "title": "Purple",
                 "description": "You are purple! You are deep and spiritual. You are probably a little psychic.",
                 "image": "https://stamp.static.cnn.io/the-color-purple/images/page01.jpg"
             },
             {
-                "title": "blue",
+                "title": "Blue",
                 "description": "You are blue! You are calm and collected. You are always keeping the peace.",
                 "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTlmnnEZ-UIoJVnhkIxNE0AoLtnXJSm6FCFJg&usqp=CAU"
             },
             {
-                "title": "red",
+                "title": "Red",
                 "description": "You are red! You are fiesty and passionate. You have ambition and go after what you want in life.",
                 "image": "https://images.unsplash.com/photo-1518893063132-36e46dbe2428?ixlib=rb-1.2.1&w=1000&q=80"
             }
