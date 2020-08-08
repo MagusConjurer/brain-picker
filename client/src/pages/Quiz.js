@@ -4,6 +4,7 @@ import Share from '../components/Share';
 import Footer from '../components/Footer';
 import QuizSample from '../QuizSamples.json';
 import QuizForm from '../components/QuizForm';
+import SubmitBtn from '../components/SubmitBtn';
 import Result from '../components/Result';
 
 class QuizTest extends Component {
@@ -44,6 +45,7 @@ class QuizTest extends Component {
                   ? <Result quiz={this.state.quiz.quizName} result={this.state.result} labels={this.state.labels} />
                   : this.state.quiz.questions.map(question => <QuizForm quizQuestion={question} />)
                 }
+                <SubmitBtn />
                 <Share className="mt-5" />
                 <Footer />
             </div>
