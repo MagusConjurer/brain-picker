@@ -73,7 +73,6 @@ class QuizTest extends Component {
   
 
   render() {
-    if (buttonClicked === false) {
       return(
             <div>
                 <QuizPageHeader quiz={this.state.quiz} />
@@ -81,26 +80,11 @@ class QuizTest extends Component {
                   ? <Result {...this.state} />
                   : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
                 }
-                <SubmitBtn onClick = {this.somethingHappened}/>
+                <SubmitBtn />
                 <Share />
                 <Footer />
             </div>
         )
-              }
-              else if (buttonClicked === true) {
-                return(
-                  <div>
-                      <QuizPageHeader quiz={this.state.quiz} />
-                      {this.state.submitted 
-                        ? <Result {...this.state} />
-                        : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
-                      }
-                      <Share />
-                      <Footer />
-                  </div>
-              )
-
-              }
     }
 }
 
