@@ -12,7 +12,8 @@ class Profile extends Component {
     render() {
         const { user } = this.props.auth;
         return (
-            <div style={{ height: "75vh" }} className="container valign-wrapper">
+            <div>
+            {/* <div style={{ height: "75vh" }} className="container valign-wrapper"> */}
                 <div className="row">
                     <div className="col s12 center-align">
                     <div className='row'>
@@ -35,7 +36,7 @@ class Profile extends Component {
                                 marginTop: "1rem"
                             }}
                             onClick={this.onLogoutClick}
-                            className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                            className="btn btn-large waves-effect waves-light hoverable"
                         >
                             Logout
             </button>

@@ -4,8 +4,6 @@ import "./style.css";
 
 class Navbar extends Component {
 
-
-
   render() {
     return (
       <nav className="nav-wrapper">
@@ -22,9 +20,6 @@ class Navbar extends Component {
             <li>
               <a href="/QuizCentral">Quiz Central</a>
             </li>
-            {/* <li>
-              <a href="/Profile">Profile</a>
-            </li> */}
             <li>
             <a href="/profile" className="waves-effect waves-light btn">
                 Profile
