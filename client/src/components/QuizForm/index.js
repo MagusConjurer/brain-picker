@@ -8,7 +8,7 @@ class QuizForm extends Component {
   render() {
     return (
       <>
-        <h4>{this.props.quizQuestion.question}</h4>
+        <p>{this.props.quizQuestion.question}</p>
         <form action="#">
           {this.props.quizQuestion.answers.map((data) => (
             <p>
