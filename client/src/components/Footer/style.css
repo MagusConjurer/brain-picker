@@ -24,6 +24,6 @@ a {
     color: tomato;
 }
 
-footer > a:hover {
+.github:hover {
     color: white;
 }
