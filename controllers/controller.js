@@ -20,8 +20,8 @@ module.exports = {
       .then(dbUsers => {
         let count = [0, 0, 0, 0];
         dbUsers.forEach(user => {
-          if(user.result !== null) {
-            switch(user.result){
+          if(user.results !== null) {
+            switch(user.results){
               case 0:
                 count[0] += 1;
                 break;
