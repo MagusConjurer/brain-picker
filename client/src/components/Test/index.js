@@ -6,7 +6,7 @@ export function UserImage() {
     return(
         <div className=''>
             <h6>Profile test</h6>
-            <img src='./images/default-person.png'/>
+            <img src='./images/default-person.png' alt="default-person" />
         </div>
     );
 }

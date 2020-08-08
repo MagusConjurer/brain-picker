@@ -12,7 +12,7 @@ function SubmitBtn() {
       style={style}
     >
       Submit Quiz
-      <i class="material-icons right">send</i>
+      <i className="material-icons right">send</i>
     </button>
     )
 }
