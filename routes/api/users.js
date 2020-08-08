@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
+const controller = require("../../controllers/controller");
 
 //load input validation
 const validateRegisterInput = require("../../validation/register");
@@ -98,6 +99,9 @@ router.post("/login", (req, res) => {
     });
 });
 
+router.route("/result/total")
+  .get(controller.findNumUsers);
+
 router.post("/result/:id/:value", (req, res) => {
   User.findByIdAndUpdate(req.params.id, { results: req.params.value })
     .then(dbUser => res.json(dbUser))
@@ -109,5 +113,8 @@ router.get("/result/:id", (req, res) => {
     .then(dbUser => res.json(dbUser.results))
     .catch(err => res.status(422).json(err));
 });
+
+
+  
 
 module.exports = router;
