@@ -1,6 +1,11 @@
 {
   "root": "build/",
   "clean_urls": false,
+  "proxies": {
+    "/api/": {
+        "origin": "https://pick-their-brain.herokuapp.com/"
+    }
+  },
   "routes": {
     "/**": "index.html"
   }
