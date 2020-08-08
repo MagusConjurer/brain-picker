@@ -3,16 +3,16 @@
 An app that allows you to complete quizzes that categorize the users. Each answer can contribute to multiple statistics, allowing for more accurate results. Results of each quiz completed will be available at all times to allow for a robust collection of data.
 
 # Login Page
-![Brain Picker](./client/src/images/brain.jpg "LOGIN")
+![Brain Picker](./client/src/images/login.png "LOGIN")
 
 # Home Page
-![Brain Picker](./client/src/images/brain.jpg "HOME")
+![Brain Picker](./client/src/images/home.png "HOME")
 
 # Results Page
-![Brain Picker](./client/src/images/brain.jpg "RESULTS")
+![Brain Picker](./client/src/images/quizResult.png "RESULTS")
 
-# Quizzes Page
-![Brain Picker](./client/src/images/brain.jpg "QUIZZES")
+# Profile Page
+![Brain Picker](./client/src/images/Profile.png "PROFILE")
 
 # Link to Github
 [Brain Picker](https://github.com/MagusConjurer/brain-picker)
