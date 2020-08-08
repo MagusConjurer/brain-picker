@@ -61,7 +61,7 @@ class QuizTest extends Component {
                   : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
                 }
                 <SubmitBtn />
-                <Share className="mt-5" />
+                <Share />
                 <Footer />
             </div>
         )
