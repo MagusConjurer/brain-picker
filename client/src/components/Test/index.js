@@ -13,8 +13,9 @@ export function UserImage() {
 export function UserBio() {
     return(
         <div className='userBio'>
-            <p>Username</p>
-            <p># of Quizes Taken</p>
+            <p>Welcome back!</p>
+            <p>Total Quizzes Taken: 1</p>
+            <p><strike>Total Quizzes Created: 0</strike> <em>Coming Soon!</em></p>
         </div>
     )
 }

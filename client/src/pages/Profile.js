@@ -45,7 +45,7 @@ class Profile extends Component {
 
             <div className="section z-depth-2" style={{ backgroundColor: 'white', marginBottom: '40px', padding: '8px' }}>
                 <Row><h4>Your Results:</h4></Row>
-                <hr/>
+                <hr style={{marginBottom: '40px'}}/>
                 
                 <Row>
                     <Col>
@@ -58,17 +58,17 @@ class Profile extends Component {
                 </Row>
 
                 <Row>
+                    <div style={{ marginLeft: '20px'}}>
                     <Col>
                         <img src={this.state.quiz.results[3].image} alt={this.state.quiz.results[3].title} className="quizImg z-depth-2" />
                     </Col>
                     <Col>
                         <p>{this.state.quiz.results[3].description}</p>
                     </Col>
+                    </div>
                 </Row>
             </div>
 
-
-            
             <button
                 style={{ width: "150px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }}
                     onClick={this.onLogoutClick}
