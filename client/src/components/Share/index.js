@@ -15,11 +15,12 @@ import "./style.css";
 
 class Share extends Component {
   render() {
-    const shareUrl = "https://github.com/MagusConjurer/brain-picker";
+    const shareUrl = "https://pick-their-brain.herokuapp.com/";
     const title = "Pick Their Brain"; 
 
     return (
       <div className="margin">
+        <p>SHARE PICK THEIR BRAIN!</p>
         <FacebookShareButton url={shareUrl} quote={title}>
           <FacebookIcon size={32} round />
         </FacebookShareButton>

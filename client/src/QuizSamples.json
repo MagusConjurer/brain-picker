@@ -1,18 +1,18 @@
 [
     {
         "id": 1,
-        "quizName": "What Color Are You?",
-        "description": "Find out which color best represents who you are.",
-        "image": "https://cloud.mysteryscience.com/image/fetch/c_fill,f_auto,q_auto/https://www.dropbox.com/s/hnsgawcap2ket3f/InvisibleForcesM2-Thumbnail-1920x1080.png%3Fdl%3D1",
+        "quizName": "Color Guesser?",
+        "description": "Can we guess your favorite color?!",
+        "image": "https://cdn.hytto.com/UploadFiles/file/20191227/color_marketing_psychology.jpg",
         "questions": [{
             "question": "Do you prefer day or night?",
             "answers": [
                 {
-                    "answer": "night",
+                    "answer": "Night",
                     "weights": [0, 5, 3, 1]
                 },
                 {
-                    "answer": "day",
+                    "answer": "Day",
                     "weights": [5, 0, 2, 4]
                 }
 
