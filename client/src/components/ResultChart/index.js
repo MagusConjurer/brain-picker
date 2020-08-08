@@ -19,10 +19,10 @@ class ResultChart extends React.Component {
         datasets: [{
           data: this.props.values,
           backgroundColor: [
-            "#2B0B3F",
-            "#57167E",
-            "#9B3192",
-            "#EA5F89",
+            "#FCDC4D",
+            "#321325",
+            "#0D324D",
+            "#9A031E",
             "#F7B7A3",
             "#FFF1C9"
           ]
