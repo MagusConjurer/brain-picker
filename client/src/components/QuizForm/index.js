@@ -1,21 +1,17 @@
 import React, { Component } from "react";
+import QuizFormInput from "../QuizFormInput";
 
 class QuizForm extends Component {
   render() {
     return (
-      <>
-        <p>{this.props.quizQuestion.question}</p>
-        <form action="#">
-          {this.props.quizQuestion.answers.map((data, index) => (
-            <p key={index}>
-              <label>
-                <input className="with-gap" name="group1" type="radio"></input>
-                <span>{data.answer}</span>
-              </label>
-            </p>
-          ))}
-        </form>
-      </>
+      <form>
+        {this.props.quizQuestions.map((data, index) => (
+          <div>
+            {data.question}
+            <QuizFormInput key={index} answers={data.answers} group={"group" + index} />
+          </div>
+        ))}
+      </form>
     );
   }
 }

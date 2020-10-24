@@ -50,6 +50,7 @@ class QuizTest extends Component {
 
   handleSubmitClick(e) {
     e.preventDefault();
+    console.log();
     this.getResult(3);
     setTimeout(() => {this.setSubmitted();}, 2000);
   }
@@ -60,7 +61,7 @@ class QuizTest extends Component {
                 <QuizPageHeader quiz={this.state.quiz} />
                 {this.state.submitted 
                   ? <Result {...this.state} />
-                  : this.state.quiz.questions.map((question, index) => <QuizForm key={index} quizQuestion={question} /> )
+                  : <QuizForm quizQuestions={this.state.quiz.questions} />
                 }
                 <SubmitBtn clickHandler={this.handleSubmitClick} />
                 <Share />
