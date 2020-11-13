@@ -5,9 +5,9 @@ class QuizFormInput extends Component {
     return (
       <div>
         {this.props.answers.map((data, index) => (
-          <p>
+          <p key={index}>
             <label>
-              <input className="with-gap" type="radio" name={this.props.group} value={index} />
+              <input className="with-gap" type="radio" name={this.props.group} value={index} onChange={this.props.handleInput} />
               <span>{data.answer}</span>
             </label>
           </p>
