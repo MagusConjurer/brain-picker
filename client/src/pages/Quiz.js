@@ -4,7 +4,6 @@ import Share from '../components/Share';
 import Footer from '../components/Footer';
 import QuizSample from '../QuizSamples.json';
 import QuizForm from '../components/QuizForm';
-import SubmitBtn from '../components/SubmitBtn';
 import Result from '../components/Result';
 import API from '../utils/API';
 
@@ -48,9 +47,9 @@ class QuizTest extends Component {
     }));
   }
 
-  handleSubmitClick(e) {
+  handleSubmitClick(e, selected) {
     e.preventDefault();
-    console.log();
+    console.log(selected);
     this.getResult(3);
     setTimeout(() => {this.setSubmitted();}, 2000);
   }
@@ -61,9 +60,8 @@ class QuizTest extends Component {
                 <QuizPageHeader quiz={this.state.quiz} />
                 {this.state.submitted 
                   ? <Result {...this.state} />
-                  : <QuizForm quizQuestions={this.state.quiz.questions} />
+                  : <QuizForm quizQuestions={this.state.quiz.questions} clickHandler={this.handleSubmitClick}/>
                 }
-                <SubmitBtn clickHandler={this.handleSubmitClick} />
                 <Share />
                 <Footer />
             </div>

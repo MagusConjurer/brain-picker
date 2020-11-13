@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import QuizFormInput from "../QuizFormInput";
+import SubmitBtn from '../SubmitBtn';
 
 class QuizForm extends Component {
   state = {
@@ -29,6 +30,7 @@ class QuizForm extends Component {
             <QuizFormInput answers={data.answers} group={"group" + index} handleInput={this.handleInputChange.bind(this)} />
           </div>
         ))}
+        <SubmitBtn clickHandler={(e) => {this.props.clickHandler(e, this.state)}} />
       </form>
     );
   }
