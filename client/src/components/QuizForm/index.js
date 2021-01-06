@@ -1,21 +1,37 @@
 import React, { Component } from "react";
+import QuizFormInput from "../QuizFormInput";
+import SubmitBtn from '../SubmitBtn';
 
 class QuizForm extends Component {
+  state = {
+    selections: {
+    }
+  };
+
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+
+    this.setState(prevState => ({
+      selections: {
+        ...prevState.selections,
+        [name]: value
+      }
+    }));
+  };
+
   render() {
     return (
-      <>
-        <p>{this.props.quizQuestion.question}</p>
-        <form action="#">
-          {this.props.quizQuestion.answers.map((data, index) => (
-            <p key={index}>
-              <label>
-                <input className="with-gap" name="group1" type="radio"></input>
-                <span>{data.answer}</span>
-              </label>
-            </p>
-          ))}
-        </form>
-      </>
+      <form>
+        {this.props.quizQuestions.map((data, index) => (
+          <div key={index}>
+            {data.question}
+            <QuizFormInput answers={data.answers} group={"group" + index} handleInput={this.handleInputChange.bind(this)} />
+          </div>
+        ))}
+        <SubmitBtn clickHandler={(e) => {this.props.clickHandler(e, this.state)}} />
+      </form>
     );
   }
 }
